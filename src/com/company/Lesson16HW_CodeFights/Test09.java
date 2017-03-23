@@ -30,7 +30,7 @@ public class Test09 {
     public static void main(String[] args) {
         String s = "Добро пожаловать на ProgLang.su";
         String[] arrays = s.split(" ");
-        String res = "";
+        String  res = "";
 
         for (int i = arrays.length - 1; i >= 0; i--) {
             res += arrays[i] + " ";
