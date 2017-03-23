@@ -51,7 +51,7 @@ public class Test02 {
 
     public static void checking(Map<String, Integer> map) throws IOException {
 
-        String nmonth =  reader.readLine();
+        String nmonth = reader.readLine();
         Iterator<Map.Entry<String, Integer>> iternm = map.entrySet().iterator();
         while (iternm.hasNext()) {
             Map.Entry<String, Integer> para = iternm.next();
