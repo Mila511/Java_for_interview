@@ -21,6 +21,5 @@ public class Test06 {
         } catch (NullPointerException e) {
             System.out.println(e);
         }
-
     }
 }

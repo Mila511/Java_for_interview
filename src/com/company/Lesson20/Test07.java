@@ -17,13 +17,9 @@ public class Test07 {
     public static void main(String[] args) throws URISyntaxException {
         try {
             gener();
-
         } catch(NullPointerException e){
-
         } catch (FileNotFoundException e){
-
         }
-
     }
 
     public static void gener() throws FileNotFoundException, URISyntaxException {
