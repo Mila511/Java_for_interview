@@ -34,7 +34,6 @@ public class Test02_1 {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        // List<String> strlist = new ArrayList<>();
         List<String> strlist = new ArrayList<>();
         strlist.add("Вишня");
         strlist.add("1");
@@ -64,7 +63,7 @@ public class Test02_1 {
         int countW = 0;
         int countN = 0;
         for (int i = 0; i < strarr.length; i++) {
-            if (isnumber(strarr[i])) {
+            if (isNumber(strarr[i])) {
                 countN++;
             } else {
                 countW++;
@@ -74,7 +73,7 @@ public class Test02_1 {
         String[] arrN = new String[countN];
         countN = countW = 0;
         for (int i = 0; i < strarr.length; i++) {
-            if (isnumber(strarr[i])) {
+            if (isNumber(strarr[i])) {
                 arrN[countN] = strarr[i];
                 countN++;
             } else {
@@ -88,7 +87,7 @@ public class Test02_1 {
         return s1.compareTo(s2) > 0;
     }
 
-    public static boolean isnumber(String s) {
+    public static boolean isNumber(String s) {
         if (s.length() == 0) return false;
         for (char c : s.toCharArray()) {
             if (!Character.isDigit(c) && c != '-') return false;
