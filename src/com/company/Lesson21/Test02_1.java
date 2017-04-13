@@ -65,7 +65,7 @@ public class Test02_1 {
         for (int i = 0; i < strarr.length; i++) {
             if (isNumber(strarr[i])) {
                 countN++;
-            } else {
+            } else  {
                 countW++;
             }
         }
