@@ -81,7 +81,40 @@ public class Test02_1 {
                 countW++;
             }
         }
-    }
+            String trans;
+            for (int i = 0; i < arrN.length; i++) {//decrease
+                for (int j = 1; j < arrN.length-i; j++) {
+                    int a = Integer.parseInt(arrN[j-1]);
+                    int b = Integer.parseInt(arrN[j]);
+                    if(a<b){
+                        trans=arrN[j-1];
+                        arrN[j-1]=arrN[j];
+                        arrN[j]=trans;
+                    }
+                }
+            }
+        for (int i = 0; i <arrW.length ; i++) {//increase
+            for (int j = 0; j < arrW.length-1; j++) {
+                if(isGreaterThen(arrW[j], arrW[j+1])){
+                    trans=arrW[j];
+                    arrW[j]=arrW[j+1];
+                    arrW[j+1]=trans;
+                }
+            }
+        }
+        countN=countW=0;
+        for (int i = 0; i < strarr.length; i++) {
+            if(isNumber(strarr[i])){
+                strarr[i]=arrN[countN];
+                countN++;
+            }else {
+                strarr[i]=arrW[countW];
+                countW++;
+            }
+        }
+
+        }
+
 
     public static boolean isGreaterThen(String s1, String s2) {
         return s1.compareTo(s2) > 0;
