@@ -29,9 +29,7 @@ public class Test15 {
         for (int n:b)
               {
                   System.out.println(n);
-                  System.out.printf("");;
-                  System.out.println();
-                  System.out.println();
+                  System.out.printf("");
 
         }
         System.out.println();
