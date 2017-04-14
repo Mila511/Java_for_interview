@@ -33,17 +33,19 @@ public class Test14 {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Введите 2-значное число или больше");
-
+        System.out.println("Введите число: ");
         int n = Integer.parseInt(reader.readLine());
+        happyNumber(n);
+    }
 
-
+    public static boolean happyNumber(int n) {
         List<Integer> numbres = new LinkedList<>();
 
         while (n > 1) {
             int counter = 0;
             while (((int) Math.round(n)) >= 1) {
                 double a = (n - ((int) Math.round(n / 10) * 10));
+
                 numbres.add((int) a);
                 n = (n - (int) a) / 10;
                 counter++;
@@ -51,13 +53,20 @@ public class Test14 {
             System.out.println(numbres);
 
             int nextnum = 0;
+            int period = 0;
             for (int i = numbres.size() - 1; i >= numbres.size() - counter; i--) {
+
                 nextnum = nextnum + numbres.get(i) * numbres.get(i);
             }
             System.out.println(nextnum);
             n = nextnum;
+            if (n == 1) {
+                System.out.println("true");
+                return true;
+            }
 
         }
+        return false;
 
     }
 }
