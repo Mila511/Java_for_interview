@@ -29,8 +29,8 @@ public class Test15 {
         for (int n:b)
               {
                   System.out.println(n);
-                  System.out.print();
-                  System.out.print();
+                  System.out.printf("");;
+                  System.out.println();
                   System.out.println();
 
         }
