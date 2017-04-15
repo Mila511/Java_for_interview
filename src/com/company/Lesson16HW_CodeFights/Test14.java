@@ -41,7 +41,7 @@ public class Test14 {
     public static boolean happyNumber(int n) {
         List<Integer> numbres = new LinkedList<>();
 
-        while (n > 1) {
+        while (n > 0) {
             int counter = 0;
             while (((int) Math.round(n)) >= 1) {
                 double a = (n - ((int) Math.round(n / 10) * 10));
