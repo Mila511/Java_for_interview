@@ -16,7 +16,7 @@ import java.util.*;
 //        sortByString(s, t) = "oodg".
 //	void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
 
-public class Test12 {
+public class Test12_sortByString {
     public static void main(String[] args) {
         String s = "weather";
         String t = "therapyw";

@@ -26,7 +26,7 @@ import java.util.Arrays;
 //        1 ≤ a[i] ≤ 1000.
 //        [output] boolean
 //        Return true if the array contains three elements that add up to x and false otherwise.
-public class Test06 {
+public class Test06_tripletSum {
     public static void main(String[] args) {
         //int [] a = {1, 1, 2, 5, 3};
         int[] a = {14, 1, 2, 3, 8, 15, 3};

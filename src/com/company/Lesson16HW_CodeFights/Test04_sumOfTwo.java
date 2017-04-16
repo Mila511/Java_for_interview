@@ -3,7 +3,7 @@ package com.company.Lesson16HW_CodeFights;
 /**
  * Created by Mila on 3/3/2017.
  */
-public class Test04 {
+public class Test04_sumOfTwo {
     public static void main(String[] args) {
 
         int[] a = {1, 2, 3};

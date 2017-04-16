@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-//import static com.company.Lesson16HW_CodeFights.Test14.happyNumber;
+//import static com.company.Lesson16HW_CodeFights.Test14_happyNumber.happyNumber;
 
 /**
  * Created by Mila on 4/13/2017.
@@ -29,7 +29,7 @@ import java.util.List;
 //        * 82 + 22 = 68;
 //        * 62 + 82 = 100;
 //        * 12 + 02 + 02 = 1.
-public class Test14 {
+public class Test14_happyNumber {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {

@@ -11,7 +11,7 @@ package com.company.Lesson16HW_CodeFights;
 //public class Test{
 
 
-public class Test09 {
+public class Test09_reverseSentence {
     public static void main(String[] args) {
         //String sentence = "Добро пожаловать на ProgLang.su";
         String sentence = "Man bites dog";

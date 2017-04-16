@@ -11,7 +11,7 @@ import java.util.Arrays;
 //        findTheNumbers(a) = [4, 5];
 //        For a = [4, 5, 6, 5, 3, 4], the output should be
 //        findTheNumbers(a) = [3, 6]
-public class Test07 {
+public class Test07_findTheNumbers {
     public static void main(String[] args) {
         int[] a = {1, 3, 5, 5, 1, 4, 3, 6};//11334556//45
         a = findTheNumbers(a);

@@ -28,7 +28,7 @@ import java.util.*;
  * The missing number.
  */
 
-public class Test03 {
+public class Test03_missingNumber {
 
 
     public static void main(String[] args) throws IOException {

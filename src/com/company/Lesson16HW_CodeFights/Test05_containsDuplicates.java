@@ -17,7 +17,7 @@ import java.util.Arrays;
 //
 //        The given array contains no duplicates.
 
-public class Test05 {
+public class Test05_containsDuplicates {
     public static void main(String[] args) {
         //int a []  = {3,1};
         int a[] = {1, 2, 3, 1};

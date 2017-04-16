@@ -15,7 +15,7 @@ package com.company.Lesson16HW_CodeFights;
 //            Given the same input string and k = 3, split the string into groups of 2, 3, and 3 characters to get the output string of "24-a0r-74k".
 
 
-public class Test10 {
+public class Test10_stringReformatting {
     public static void main(String[] args) {
         //int k = 8;//-
         int k = 7;//+
