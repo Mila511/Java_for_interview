@@ -24,16 +24,20 @@ import java.util.Map;
 
 public class Test15_firstDuplicate {
     public static void main(String[] args) {
-        //Integer[] a = {2, 3, 3, 1, 5, 2};
-        int[] a = {2, 4, 3, 5, 1};
+        int[] a = {2, 3, 3, 1, 5, 2};
+        //Integer[] a = {2, 4, 3, 5, 1};
         firstDuplicate(a);
     }
     //scaleTests.add(Arrays.stream(data).boxed().toArray(Double[]::new))
 
     public static Integer firstDuplicate (int[] a) { //ДОДЕЛАТЬ
         Integer[] c = new Integer[a.length];
+        for (int i = 0; i < a.length; i++) {
+            c[i] = a[i];
+        }
+       // System.arraycopy(a, 0, b, 0, c.length);
         Integer[] b = new Integer[a.length];//1,2,2,3,3,5
-        System.arraycopy(a, 0, b, 0, a.length);
+        System.arraycopy(c, 0, b, 0, c.length);
         Arrays.sort(b);
         int isCouple = -1;
         int firstin = 0;

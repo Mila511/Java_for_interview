@@ -38,6 +38,7 @@ public class Test02_1 {
         for (String s : arr)
             System.out.println(s);
     }
+
     static boolean isNumber(String incomingString) {  // проверка на Число/Строка
         try {
             Integer.parseInt((String) incomingString);
@@ -48,7 +49,7 @@ public class Test02_1 {
     }
 
 
-    public static String[] sorty (String arr[]) {// СОРТИРОВКИ
+    public static String[] sorty(String arr[]) {// ========================СОРТИРОВКИ
         int nmbcount = 0;
         int strcount = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -63,17 +64,17 @@ public class Test02_1 {
         nmbcount = -1;
         strcount = -1;
         for (int i = 0; i < arr.length; i++) {
-            if (isNumber(arr[i].toString())) {// числа складываем в []
+            if (isNumber(arr[i].toString())) {//========================= числа складываем в []
                 nmbcount++;
                 nmbarr[nmbcount] = (Integer.parseInt(arr[i]));
-            } else {// НЕчисла складываем в List
-              liststrarr.add(arr[i]);
+            } else {//============================================ НЕчисла складываем в List
+                liststrarr.add(arr[i]);
             }
         }
 //======================================================================
         int minnmb = nmbarr[0];
         for (int i = 0; i < nmbarr.length - 1; i++) {
-            for (int j = 0; j < nmbarr.length - 1; j++) {// сортировка [] чисел по убыванию
+            for (int j = 0; j < nmbarr.length - 1; j++) {// ========сортировка [] чисел по убыванию
                 if (nmbarr[j] < nmbarr[j + 1]) {
                     minnmb = nmbarr[j];
                     nmbarr[j] = nmbarr[j + 1];
@@ -84,7 +85,7 @@ public class Test02_1 {
 //==========================================================================
 
         String maxstrlist = "";
-        for (int i = 0; i < liststrarr.size() - 1; i++) {//  сортировка List строк по возрастанию
+        for (int i = 0; i < liststrarr.size() - 1; i++) {//  ========сортировка List строк по возрастанию
             for (int j = 0; j < liststrarr.size() - 1; j++) {
                 if (liststrarr.get(j).compareTo(liststrarr.get(j + 1)) < 0) {
                 } else {
@@ -95,12 +96,10 @@ public class Test02_1 {
             }
         }
         //===========================================================
-        for (int i = 0; i < arr.length; i++) { //из List<String> и int [] -> в старый String массив в Новом порядке
+        for (int i = 0, j = 0; i < arr.length; i++) { //===из List<String> и int [] -> в старый String массив в Новом порядке
             if (isNumber(arr[i])) {
-                while (nmbarr[i] != 0) {
-                    arr[i] = nmbarr[i].toString();
-                    nmbarr[i] = 0;
-                }
+                arr[i] = nmbarr[j].toString();
+                j++;
             } else {
                 arr[i] = liststrarr.get(0);
                 liststrarr.remove(0);
