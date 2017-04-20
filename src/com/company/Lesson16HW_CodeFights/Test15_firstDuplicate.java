@@ -25,12 +25,13 @@ import java.util.Map;
 public class Test15_firstDuplicate {
     public static void main(String[] args) {
         //Integer[] a = {2, 3, 3, 1, 5, 2};
-        Integer[] a = {2, 4, 3, 5, 1};
+        int[] a = {2, 4, 3, 5, 1};
         firstDuplicate(a);
     }
+    //scaleTests.add(Arrays.stream(data).boxed().toArray(Double[]::new))
 
-    public static Integer firstDuplicate (Integer[] a) {
-
+    public static Integer firstDuplicate (int[] a) { //ДОДЕЛАТЬ
+        Integer[] c = new Integer[a.length];
         Integer[] b = new Integer[a.length];//1,2,2,3,3,5
         System.arraycopy(a, 0, b, 0, a.length);
         Arrays.sort(b);
