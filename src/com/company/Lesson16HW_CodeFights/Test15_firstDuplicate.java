@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class Test15_firstDuplicate {
     public static void main(String[] args) {
-        int[] a = {2, 3, 3, 1, 5, 2};
+        int[] a = {8, 4, 6, 2, 6, 4, 7, 9, 5, 8};
         //Integer[] a = {2, 4, 3, 5, 1};
         firstDuplicate(a);
     }

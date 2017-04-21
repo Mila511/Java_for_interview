@@ -1,4 +1,4 @@
-package com.company.Lesson22;
+package com.company.Lesson22.Task03;
 
 /**
  * Created by Mila on 4/20/2017.

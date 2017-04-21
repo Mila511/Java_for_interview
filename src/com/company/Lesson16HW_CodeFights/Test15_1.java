@@ -9,7 +9,9 @@ public class Test15_1 {
     public static void main(String[] args) {
         int isCouple = -1;
         //Integer[] a = {2, 3, 3, 1, 5, 2};
-        Integer[] a = {2, 4, 3, 5, 1};
+       // Integer[] a = {2, 4, 3, 5, 1};
+        Integer[] a = {2, 2};
+        //Integer[] a = {8, 4, 6, 2, 6, 4, 7, 9, 5, 8};
         Integer[] b = new Integer[a.length];
         System.arraycopy(a, 0, b, 0, a.length);
         Arrays.sort(b);

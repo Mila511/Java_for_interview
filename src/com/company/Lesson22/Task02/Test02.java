@@ -1,4 +1,7 @@
-package com.company.Lesson22.Task01;
+package com.company.Lesson22.Task02;
+
+import com.company.Lesson22.Task02.Horse;
+import com.company.Lesson22.Task02.Pegas;
 
 /**
  * Created by Mila on 4/20/2017.
