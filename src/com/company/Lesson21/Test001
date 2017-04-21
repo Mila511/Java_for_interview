@@ -1,0 +1,56 @@
+package com.company.Lesson21;
+
+/**/Правильный Код (Артем)
+ * Created by Mila on 4/20/2017.
+ */
+/* Задача по алгоритмам
+//        Задача: Пользователь вводит с клавиатуры список слов (и чисел). Слова вывести в возрастающем порядке, числа - в убывающем.
+//        Пример ввода:
+//        Вишня
+//        1
+//        Боб
+//        3
+//        Яблоко
+//        2
+//        0
+//        Арбуз
+//        Пример вывода:
+//        Арбуз
+//        3
+//        Боб
+//        2
+//        Вишня
+//        1
+//        0
+//        Яблоко
+public class Test00 {
+    public static void sort(String[] array)
+    {
+        for(int i = 0; i < array.length; i++ )
+        {
+            if(isNumber(array[i])){
+                for(int j = 0; j < array.length; j++){
+                    if(isNumber(array[j])){
+                        int a = Integer.parseInt(array[i]);//напишите тут ваш код
+                        int b = Integer.parseInt(array[j]);
+                        if(a>b){
+                            String s = array[i];
+                            array[i] = array[j];
+                            array[j] = s;//напишите тут ваш код
+                        }
+                    }
+                }
+            }else{
+                for(int j = 0; j < array.length; j++){
+                    if(!isNumber(array[j])){
+                        if(!isGreaterThan(array[i], array[j])){ // k a
+                            String s = array[i];
+                            array[i] = array[j];
+                            array[j] = s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
