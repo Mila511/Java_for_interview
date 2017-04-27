@@ -5,6 +5,8 @@ package com.company.Lesson23.Task6_3;
  */
 
     public class Soda implements Drink {
+
+        @Override
         public boolean isAlcoholic(){
             return false;
         }
