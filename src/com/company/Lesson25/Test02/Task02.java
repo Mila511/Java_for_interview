@@ -37,5 +37,6 @@ public class Task02 {
                 , robotSecond.getName()
                 , robotFirst.attack()
                 , robotSecond.defense()));
+
     }
 }

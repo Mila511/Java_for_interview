@@ -16,5 +16,8 @@ public class BodyPart_1 {
     static final BodyPart_1 bp3 = new BodyPart_1("голова");
     static final BodyPart_1 bp4 = new BodyPart_1("грудь");
 
-
+    @Override
+    public String toString() {
+        return bodyPart_1;
+    }
 }
