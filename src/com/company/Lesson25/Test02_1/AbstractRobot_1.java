@@ -6,14 +6,11 @@ package com.company.Lesson25.Test02_1;
 //6.1 В методах attack() и defense() инициализировать переменную hitCount рандомным числом от 1 до 4.
 //    В зависимости от результата инициализации должна быть атакована и защищена определенная часть тела робота.
 public abstract class AbstractRobot_1 implements Attackable_1, Defensable_1 {
-    private int number_1;
     private String name_1;
-    //private int vins_1;
     private static int hitCount_1;
 
 
-    public AbstractRobot_1(int number_1, String name_1) {
-        this.number_1 = number_1;
+    public AbstractRobot_1(String name_1) {
         this.name_1 = name_1;
     }
 
@@ -33,6 +30,7 @@ public abstract class AbstractRobot_1 implements Attackable_1, Defensable_1 {
         if (hitCount_1 == 4) {
             atac = BodyPart_1.bp4;
         }
+        hitCount_1 = 0;
         return atac;
     }
 
@@ -58,10 +56,7 @@ public abstract class AbstractRobot_1 implements Attackable_1, Defensable_1 {
     public String getName() {
         return name_1;
     }
-    public int getNumber_1 () {
-        return number_1;
-    }
-   // public int getVins_1() {
-   //     return vins_1;
-   // }
+
 }
+
+

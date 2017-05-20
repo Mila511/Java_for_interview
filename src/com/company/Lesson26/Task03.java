@@ -13,28 +13,30 @@ import java.io.*;
 */
 public class Task03 {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
     public static void main(String[] args) throws IOException {
-         String filenameIn = reader.readLine();
-        String filenameOut = reader.readLine();
 
-            FileInputStream streamIn;
+
+        FileInputStream streamIn;
+        while (true) {
             try {
+                String filenameIn = reader.readLine();
                 streamIn = new FileInputStream(filenameIn);
+                break;
             } catch (FileNotFoundException e) {
-
                 System.out.println("FileNotFoundException");
-                filenameIn = reader.readLine();
-                streamIn = new FileInputStream(filenameIn);
-
-                    FileOutputStream streamOut = new FileOutputStream(filenameOut);
-                    int data = 0;
-                    int bytecont = 0;
-                    while (streamIn.available() > 0) {
-                        data = streamIn.read();
-                        streamOut.write(data);
-                        bytecont++;
-                    }
-                System.out.println(bytecont);
-                }
             }
         }
+
+        String filenameOut = reader.readLine();
+        FileOutputStream streamOut = new FileOutputStream(filenameOut);
+        int data = 0;
+        int bytecont = 0;
+        while (streamIn.available() > 0) {
+            data = streamIn.read();
+            streamOut.write(data);
+            bytecont++;
+        }
+        System.out.println(bytecont);
+    }
+}

@@ -5,7 +5,5 @@ package com.company.Lesson25.Test02_1;
  */
 public interface Attackable_1 {
     BodyPart_1 attack();
-
-
     }
 
